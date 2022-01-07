@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dance</title>
+    <link href="art.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="swaf.js"></script>
+    <script>
+        jQuery(document).ready(function() {
+            jQuery(function() {
+                jQuery(this).bind("contextmenu", function(event) {
+                    event.preventDefault();
+                    swal.fire('Right Click is Disabled');
+                });
+            });
+        });
+        </script>
+</head>
+
+<body onselectstart="return false" oncut="return false" oncopy="return false" onpaste="return false"
+    ondrag="return false" ondrop="return false">
+    <header>
+        <a herf="index.html"><img src="bulb.png" alt="logo" align="left" height="150" width="150"></a>
+        <ul>
+            <h1>Welcome to the World of Dance</h1><br><br>
+        </ul>
+    </header> <br><br><br><br><br><br>
+    <button id="indian" onclick="indian()" class="button" type="button"
+        data-hover="Indian classical dance is an umbrella term for various performance arts rooted in musical theatre styles, whose theory and practice can be traced to the Sanskrit text, Natyashastra. "
+        data-active="I'M ACTIVE"><span>Indian Classical Dance</span></button>
+    <button id="african" onclick="african()" class="button" type="button"
+        data-hover="African-American dance has developed within Black American communities in everyday spaces, rather than in studios, schools or companies."
+        data-active="I'M ACTIVE"><span>African-American Dance</span></button>
+    <button id="novelty" onclick="novelty()" class="button" type="button"
+        data-hover="Novelty or fad dances are typically characterized by a quick burst of popularity. Some of these dances may get a longer-lasting life."
+        data-active="I'M ACTIVE"><span>Novelty or Fad Dance</span></button>
+    <button id="ceremonial" onclick="cermony()" class="button" type="button"
+        data-hover="This is a type of Dance performed during any ceremonies or for any religious rituals. This type of Dance is also called as ritual Dance or festival dance."
+        data-active="I'M ACTIVE"><span>Ceremonial Dance</span></button>
+        <button id="social" onclick="social()" class="button" type="button"
+        data-hover="It is a non-competitive, partner dancing that is relaxed, informal, and danced for the enjoyment and entertainment of the partners that are intended for participation rather than performance."
+        data-active="I'M ACTIVE"><span>Social Dance</span></button>
+        <button id="latin" onclick="latin()" class="button" type="button"
+        data-hover="Latin Dance is a partnered dance style that is united by their place of origin- Latin America. This type of Dance is invariably passionate and rhythmic while performing."
+        data-active="I'M ACTIVE"><span>Latin or Rhythm Dance</span></button>
+        <br><br>
+    <button onclick="Back()" class="back" type="button" data-hover="Takes you back to the main page"
+        data-active="I'M ACTIVE"><span>Back</span></button>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Caricature Drawing</title>
+    <link href="art.css" rel="stylesheet" type="text/css" />
+    <link href="chatbot.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="swaf.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            jQuery(function () {
+                jQuery(this).bind("contextmenu", function (event) {
+                    event.preventDefault();
+                    swal.fire('Right Click is Disabled');
+                });
+            });
+        });
+    </script>
+</head>
+
+<body onselectstart="return false" oncut="return false" oncopy="return false" onpaste="return false"
+    ondrag="return false" ondrop="return false">
+    <header>
+        <a herf="index.html">
+            <img src="bulb.png" alt="logo" align="left" height="150" width="150">
+        </a>
+        <ul>
+            <h1>Caricature Drawing</h1><br><br>
+        </ul>
+    </header><br><br><br><br><br>
+
+    <iframe src="https://drive.google.com/file/d/1MLGTXzcpx1k_MPvSub9S7bI2bCnugyar/preview" width="640" height="480"
+        allow="autoplay"></iframe>
+
+
+
+    <div id="third">
+        <iframe id="chatbot" allow="microphone;" width="350" height="430"
+            src="https://console.dialogflow.com/api-client/demo/embedded/8c6a7c8e-e7ef-4a9c-b9b5-cb6d486eb3ae">
+        </iframe>
+    </div>
+    <button id="toggle">Having Doubts?</button>
+    <br><br><br><br>
+    <button onclick="back()" class="back" type="button" data-hover="Takes you back to the main page"
+        data-active="I'M ACTIVE"><span>Back</span></button>
+
+
+    <script src="draw.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Water Color Painting</title>
+    <link href="art.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="swaf.js"></script>
+    <script>
+        jQuery(document).ready(function() {
+            jQuery(function() {
+                jQuery(this).bind("contextmenu", function(event) {
+                    event.preventDefault();
+                    swal.fire('Right Click is Disabled');
+                });
+            });
+        });
+        </script>
+</head>
+
+<body onselectstart="return false" oncut="return false" oncopy="return false" onpaste="return false"
+    ondrag="return false" ondrop="return false">
+    <header>
+        <a herf="index.html">
+            <img src="bulb.png" alt="logo" align="left" height="150" width="150">
+        </a>
+        <ul>
+            <h1>Water Color Painting</h1><br><br>
+        </ul>
+    </header> <br><br><br><br><br><br><br>
+    <button  onclick="back()"class="back" type="button"
+        data-hover="Takes you back to the main page"
+        data-active="I'M ACTIVE"><span>Back</span></button>
+    
+
+    <script src="paint.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Art</title>
+    <link href="art.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="swaf.js"></script>
+    <script>
+        jQuery(document).ready(function() {
+            jQuery(function() {
+                jQuery(this).bind("contextmenu", function(event) {
+                    event.preventDefault();
+                    swal.fire('Right Click is Disabled');
+                });
+            });
+        });
+        </script>
+</head>
+
+<body onselectstart="return false" oncut="return false" oncopy="return false" onpaste="return false"
+    ondrag="return false" ondrop="return false">
+    <header>
+        <a herf="index.html"><img src="bulb.png" alt="logo" align="left" height="150" width="150"></a>
+        <ul>
+            <h1>Welcome to the World of Art</h1><br><br>
+        </ul>
+    </header> <br><br><br><br><br><br><br>
+    <button id="draw" onclick="draw()"class="button" type="button"
+        data-hover="Drawings are created by making lines on a surface. Long lines make up the shapes and small lines make the textures."
+        data-active="I'M ACTIVE"><span>Drawing</span></button>
+        <button id="paint" onclick="paint()"class="button" type="button"
+        data-hover="Paint has been around for thousands of years – about 30,000 years, to be more exact. ... Cave dwellers used paint to draw representations of life in those times, many of which are still visible today."
+        data-active="I'M ACTIVE"><span>Painting</span></button>
+        <button id="add" onclick="addart()"class="button" type="button"
+        data-hover="This button takes you to a page where you can give us a suggestion of adding a new tutorial related to Art."
+        data-active="I'M ACTIVE"><span>Add</span></button><br><br>
+        <button  onclick="Back()"class="back" type="button"
+        data-hover="Takes you back to the main page"
+        data-active="I'M ACTIVE"><span>Back</span></button>
+       
+        
+    <script src="main.js"></script>
+</body>
+
+</html>

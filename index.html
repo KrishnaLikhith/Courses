@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+
+    <title>HyperSkill
+    </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body scroll="no">
+    <section class="header">
+        <video loop autoplay muted width="100%" class="video-background" plays-inline>
+            <source src="bg.mp4" type="video/mp4">
+        </video>
+        <div class="first-words">
+            <img src="bulb.png" id="logo">
+            <font face="Comic Sans MS" size="50px" color="#fff">
+                <h1><b id="text">Welcome to HyperSkill<b id="dot"></b></h1>
+                <h1><b id="text">Never Stop Learing<b id="dot"></b></h1>
+               
+                <p id="quo">Come, join us the large Comunity of creatives and learn new skills and be at the top of your
+                    game.</p>
+            </font>
+            <font color="#fff"><button onclick="page()" id="login">Sign Up!</button></font>
+
+        </div>
+
+    </section>
+
+
+    <script>
+        jQuery(document).ready(function () {
+            jQuery(function () {
+                jQuery(this).bind("contextmenu", function (event) {
+                    event.preventDefault();
+                    swal.fire('Right Click is Disabled');
+                });
+            });
+        });
+        function page(){
+            window.location = "login.html";
+        }
+    </script>
+    <div><br><br><br><br>
+        <img src="painting.jpg" height="300" width="500" align="right">
+        <font color="white" size="25px">Come join and us and get your skills the the next level<b id="stop">.</b>
+        </font>
+        <script src="swaf.js"></script>
+        <script src="main.js"></script>
+
+
+</body>
+
+</html>

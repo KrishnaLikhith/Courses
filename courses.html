@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Courses</title>
+    <link href="courses.css" rel="stylesheet" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+</head>
+
+<body onselectstart="return false" oncut="return false" oncopy="return false" onpaste="return false"
+    ondrag="return false" ondrop="return false">
+    <header>
+        <a herf="index.html"><img src="bulb.png" alt="logo" align="left" height="150" width="150"></a>
+        <ul>
+            <h1>Courses</h1>
+        </ul>
+    </header> <br><br><br><br><br><br><br>
+    <button id="art" class="button" type="button"
+        data-hover="Art supports the expression of complex feelings that helps us feel better about ourselves and helps us understand others."
+        data-active="I'M ACTIVE" onclick="Art()"><span>Art</span></button>
+    <button id="dance" class="button" type="button"
+        data-hover="Dance is a performing art form consisting of sequences of movement, either improvised or purposefully selected. "
+        data-active="I'M ACTIVE" onclick="dance()"><span>Dance</span></button>
+
+    <script src="main.js"></script>
+   
+    <script src="swaf.js"></script>
+    <script>
+        jQuery(document).ready(function() {
+            jQuery(function() {
+                jQuery(this).bind("contextmenu", function(event) {
+                    event.preventDefault();
+                    swal.fire('Right Click is Disabled');
+                });
+            });
+        });
+        </script>
+</body>
+
+</html>

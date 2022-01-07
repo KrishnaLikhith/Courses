@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add</title>
+    <link href="art.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="swaf.js"></script>
+    <script>
+        jQuery(document).ready(function() {
+            jQuery(function() {
+                jQuery(this).bind("contextmenu", function(event) {
+                    event.preventDefault();
+                    swal.fire('Right Click is Disabled');
+                });
+            });
+        });
+        </script>
+
+</head>
+
+<body onselectstart="return false" oncut="return false" oncopy="return false" onpaste="return false"
+    ondrag="return false" ondrop="return false">
+    <center>
+        <h1>Give us Your Idea</h1>
+        <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSezQuy1CXpglWvUBJnmwEq6NqjiJwdTomzBh1HwJ2RAOVSjFg/viewform?embedded=true"
+            width="640" height="677" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </center>
+    <button  onclick="Back()"class="back" type="button"
+        data-hover="Takes you back to the main page"
+        data-active="I'M ACTIVE"><span>Back</span></button>
+
+
+    <script src="paint.js"></script>
+
+</body>
+
+</html>
